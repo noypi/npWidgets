@@ -1,0 +1,70 @@
+<!doctype html>
+<html ng-app="MyApp">
+
+<head>
+<script type="text/javascript" src="angular.min.js"></script>
+<!-- script type="text/javascript" src="npImageServices.js"></script>
+<script type="text/javascript" src="npImageWidgets.js"></script -->
+
+<script type="text/javascript" src="np-img-widgets.min.js"></script>
+<script type="text/javascript" src="npDiagnosis.js"></script>
+
+<script type="text/javascript">
+	var app = angular.module("MyApp", ['npImageWidgets', 'npDiagnosis']);
+
+</script>
+
+<style>
+h4 {
+	margin-left:50px;
+	font-size:18px;
+	color:rgb(184, 103, 103);
+}
+</style>
+
+</head>
+
+<body>
+
+	<h4>Using thumbnail with default width and height</h4>
+	<div style="display:block">
+		<div style="position:relative;left:50px;display:inline-block">
+			<np-image label="label1" src="img(220x137).png"></np-image>
+		</div>
+		<div style="position:relative;display:inline;left:80px;">
+			<np-image-enlarge label="label1" zoomperc="200" np-width="200" np-height="300"  src-enlarged="img(687x427).png"/>
+			<h1>Some text</h1>
+			<p>some foo bar and lorem epsum text goes here.</p>
+		</div>
+	</div>
+
+	<br/></br>
+	<h4>Using a thumbnail; specifying a thumbnail's width, and a square preview</h4>
+	<div style="display:block">
+		<div style="position:relative;left:50px;display:inline-block">
+			<np-image label="label2" src="img(220x137).png" width="100px"></np-image>
+		</div>
+		<div style="position:relative;display:inline;left:80px;">
+			<np-image-enlarge label="label2" zoomperc="200" np-width="200" np-height="200"  src-enlarged="img(687x427).png"/>
+			<h1>Some text</h1>
+			<p>some foo bar and lorem epsum text goes here.</p>
+		</div>
+	</div>
+
+	<br/></br><br/></br><br/>
+	<h4>Using one image for both thumbnail view and enlarger view</h4>
+	<div style="display:block">
+		<div style="position:relative;left:50px;display:inline-block">
+			<np-image label="label3" src="img(687x427).png" width="200px"></np-image>
+		</div>
+		<div style="position:relative;display:inline;left:80px;">
+			<np-image-enlarge label="label3" zoomperc="200" np-width="200" np-height="200"/>
+			<h1>Some text</h1>
+			<p>some foo bar and lorem epsum text goes here.</p>
+		</div>
+	</div>
+
+	<br/></br><br/></br><br/></br>
+</body>
+
+</html>
