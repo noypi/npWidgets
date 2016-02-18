@@ -1,5 +1,5 @@
 ## Versions
-- known to work with Angular v1.3.0.
+- tested with Angular v1.3.0.
 
 ## Image Enlarger:
 
