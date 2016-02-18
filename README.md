@@ -3,7 +3,7 @@
 
 ## Image Enlarger:
 
-http://angularjstutorial.appspot.com/widgets/javascript-image-enlarger-for-angularjs.html](http://angularjstutorial.appspot.com/widgets/javascript-image-enlarger-for-angularjs.html)
+[http://angularjstutorial.appspot.com/widgets/javascript-image-enlarger-for-angularjs.html](http://angularjstutorial.appspot.com/widgets/javascript-image-enlarger-for-angularjs.html)
 
 
 ## Known issues
